@@ -1,0 +1,30 @@
+.imgContainer {
+    position: relative;
+    align-content: center;
+    margin-right: 8rem;
+}
+
+.secondary {
+    max-width: 80%;
+    margin-left: 6rem;
+}
+
+.relative img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.absolute {
+    position: absolute;
+    top: -3rem;
+    right: 0.2rem;
+}
+
+.absolute img {
+    rotate: -15deg;
+    z-index: 1;
+    width: 14rem;
+    height: auto;
+}

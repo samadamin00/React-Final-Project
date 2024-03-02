@@ -80,3 +80,13 @@ label#outlined-basic-label {
     z-index: 2;
     position: relative;
 }
+
+@media screen and (max-width:56.188rem) {
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

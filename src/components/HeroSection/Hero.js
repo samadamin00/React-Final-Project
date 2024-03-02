@@ -24,15 +24,15 @@ const Hero = () => {
         { value: 'central', label: 'Central' }
     ]
     let mechanic = useNavigate()
-    let mechanicPage = ()=>{
+    let mechanicPage = () => {
         mechanic('/Mechanic')
     }
     return (
         <>
             <section className="heroS">
                 <Container maxWidth="lg">
-                    <Grid className='nBackground' pt={18} pb={14} container >
-                        <Grid item xs={12} sm={12} md={12} lg={7} xl={7}>
+                    <Grid rowSpacing={6} direction={{ xs: 'column', sm: 'column', md: 'row', lg: 'row', xl: 'row' }} className='nBackground' pt={20} pb={14} container >
+                        <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>
                             <div className="left">
                                 <h6>EMERGENCY ROAD SERVICE PROVIDER</h6>
                                 <h1>Leading towing service provider.</h1>
@@ -41,7 +41,7 @@ const Hero = () => {
                                     <div style={{ width: '35rem', fontSize: "2rem", heigh: "5rem" }} className="searchBar">
                                         <Select options={options} />
                                     </div>
-                                    <button onClick={()=> mechanicPage()} className='btn btn-orange'>Search</button>
+                                    <button onClick={() => mechanicPage()} className='btn btn-orange'>Search</button>
                                 </div>
                                 <div className="bottom">
                                     <span><img style={{ color: 'var(--green)' }} src={clock} alt="clock" /></span>
@@ -49,14 +49,17 @@ const Hero = () => {
                                 </div>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={5} xl={5}>
+                        <Grid sx={{
+                            display: 'flex',
+                            justifyContent: 'center', alignItems: 'center'
+                        }} item xs={12} sm={12} md={5} lg={5} xl={5}>
                             <div className="right-img">
                                 <i class="fas fa-play"> </i>
                             </div>
                         </Grid>
                     </Grid>
                 </Container>
-            </section >
+            </section>
         </>
     )
 }

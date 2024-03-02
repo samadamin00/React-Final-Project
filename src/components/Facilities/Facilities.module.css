@@ -24,3 +24,15 @@
     background-color: var(--white);
 }
 
+@media screen and (max-width:56.188rem) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .none {
+        margin-bottom: 0rem
+    }
+}

@@ -6,29 +6,12 @@ import Footer from './components/Footer/Footer';
 import About from './pages/About/About';
 import Machanic from './pages/Machanic/Machanic';
 import Contact from './pages/Contact/Contact';
-import Sign from './components/Tab/SignIn';
+import Sign from './components/Tab/SignUp';
 import Login from './components/Tab/Login';
+import { NotFound } from './pages/RouteNoMatch';
 import './App.css';
 
 function App() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const currentPath = location.pathname;
-    let pageName = '';
-
-    if (currentPath === '/Home') {
-      pageName = 'Home';
-    } else if (currentPath === '/About') {
-      pageName = 'About';
-    }
-
-    document.body.className = pageName.toLowerCase();
-
-    return () => {
-      document.body.className = '';
-    };
-  }, [location]);
 
   return (
     <>
@@ -40,6 +23,7 @@ function App() {
         <Route path='/Contact' element={<Contact />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/Signup' element={<Sign />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </>

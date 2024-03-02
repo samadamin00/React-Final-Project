@@ -14,15 +14,15 @@ const Services = () => {
             <Container maxWidth={'lg'}>
                 <Grid sx={{ zIndex: '1', position: 'relative' }} container pt={15}>
                     <ServiceOne head='OUR SERVICES' des="We transport your vehicle safely and efficiently" paragraph="We are a well-equipped towing service available to help with towing a car 24/7 we provide a fast, affordable, friendly, and reliable car towing service." />
-                    <Grid columnSpacing={5} container>
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                    <Grid rowSpacing={ 5} columnSpacing={5} container>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <div className="serCard1">
                                 <img src={serviceCard1} alt="car" />
                                 <h4>Emergency towing service</h4>
                                 <p>We are a well-equipped towing service available to help with towing a car 24/7 we provide a fast, affordable, friendly, and reliable car towing service.24/7 we provide a fast, affordable,  </p>
                             </div>
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <div className="serCard1 change">
                                 <span>LIMITED OFFER</span>
                                 <img src={serviceCard2} alt="percentage" />

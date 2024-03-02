@@ -15,8 +15,8 @@ const Testimonial = () => {
               <p>We are a well-equipped towing service available to help with towing a car 24/7 we provide a fast, affordable, friendly, and reliable car towing service.</p>
             </div>
           </Grid>
-          <Grid container columnSpacing={5}>
-            <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+          <Grid container columnSpacing={5} rowSpacing={3}>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <div className="sec">
                 <div className="ch">
                   <div className="star">
@@ -32,7 +32,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <div className="sec">
                 <div className="ch">
                   <div className="star">
@@ -48,7 +48,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
+            <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <div className="sec">
                 <div className="ch">
                   <div className="star">

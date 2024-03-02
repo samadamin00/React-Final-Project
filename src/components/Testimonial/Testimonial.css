@@ -40,3 +40,29 @@
 .testimonialContent p {
     text-align: center;
 }
+
+@media screen and (max-width:62rem) {
+    .testimonialContent h2 {
+        font-size: 3rem;
+    }
+
+    .testimonialContent {
+        max-width: 80%
+    }
+}
+
+@media screen and (max-width:75rem) {
+
+
+    .testimonialContent h2 {
+        font-size: 3rem;
+    }
+
+    .testimonialContent h6 {
+        font-size: 1.4rem;
+    }
+
+    .testimonialContent p {
+        font-size: 1.6rem;
+    }
+}

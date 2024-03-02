@@ -8,8 +8,8 @@ const Why1 = () => {
         <>
             <section className='backgroundOne' >
                 <Container maxWidth={'lg'}>
-                    <Grid sx={{zIndex:'1',position:'relative'}} container pt={13}>
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                    <Grid className="center" direction={{ xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row', xl: 'row' }} sx={{ zIndex: '1', position: 'relative' }} container pt={10}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <div className="content1">
                                 <h5>WHY US</h5>
                                 <h2>24/7 towing services is what we do</h2>
@@ -33,7 +33,7 @@ const Why1 = () => {
                             </div>
 
                         </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                        <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <div className="content1Img">
                                 <img src={ContentOne} alt="" />
                             </div>

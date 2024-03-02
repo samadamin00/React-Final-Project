@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@mui/material'
-const ServiceOne = ({ head, des, paragraph}) => {
+const ServiceOne = ({ head, des, paragraph }) => {
     return (
         <>
             <Grid pb={4} item xs={12} sm={12} md={12} lg={12} xl={12}>

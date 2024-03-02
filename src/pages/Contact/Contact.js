@@ -31,8 +31,10 @@ const Contact = () => {
                   <button type="submit" className='btn btn-orange'>Submit</button>
                 </div>
               </Grid>
-              <Grid item xs={12} sm={12} md={12} lg={6} xl={6} >
-                <img src={ContactImg} alt="car" />
+              <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+                <div className={style.img}>
+                  <img src={ContactImg} alt="car" />
+                </div>
               </Grid>
             </Grid>
           </Grid>

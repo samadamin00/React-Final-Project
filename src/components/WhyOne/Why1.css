@@ -7,7 +7,8 @@
     line-height: 5.5rem;
 }
 
-.content1 h5,p {
+.content1 h5,
+p {
     color: #727272;
 }
 
@@ -44,13 +45,13 @@
 }
 
 .content1Img {
-    height: 49rem;
+    height: 52rem;
     display: flex;
     justify-content: flex-end;
 }
 
 .content1Img img {
-    width: 83%;
+    width: 90%;
     height: 100%;
     object-fit: contain;
 }

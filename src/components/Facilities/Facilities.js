@@ -21,7 +21,7 @@ const Facilities = () => {
                             </div>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4} lg={4} xl={4} >
-                            <div className={style.contact}>
+                            <div className={`${style.contact} ${style.none}`}>
                                 <span style={{ backgroundColor: 'var(--white)', color: 'black' }}><i class="fa-regular fa-circle-check"></i></span>
                                 <h4>No hidden fees</h4>
                             </div>
